@@ -1,0 +1,45 @@
+.container{
+  position:relative;
+  display:flex;
+}
+.mouse,mouse_2{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:200px;
+  height:200px;
+  border:10px solid;
+  background:#33ff88;
+  animation-name:kvadrat;
+  animation-timing-fanction:easy-out;
+  animation-duration:7s;
+  animation-iteration-count: infinite;
+ animation-direction: alternate;
+  text-align:center;
+}
+@keyframes kvadrat{
+  0%{
+    left:0px;
+    transform:scale(2,2);
+    background:red;
+  }
+  50%{
+    backrgound:#4eff33;
+    transform:rotate(560deg);
+  }
+  100%{
+    left:800px;
+    transform:scale(0.05,0.05);
+    background:#33fff8;
+  }
+}
+@keyframes kvadrat_2{
+  from{
+    right:800px;
+    transform:scale(0.1,0.1);
+  }
+  to{
+    right:200px;
+    transform:scale(2,2);
+  }
+}
